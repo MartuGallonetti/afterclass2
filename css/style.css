@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Flex aplicar a una etiqueta que sea padre de 1 o + hijos */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lavender;
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+.header a img {
+    width: 120px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.pelicula {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pelicula p {
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(195, 148, 240);
+    min-height: 10vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Last (arranque a armar con dimensiones de compu y termino con la del celu (Max-width) */
+@media (max-width: 619px){
+    .header {
+        justify-content: center;
+    }
+    .nac ul  {
+        width: 300px;
+    }
+}
